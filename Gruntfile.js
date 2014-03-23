@@ -412,7 +412,7 @@ module.exports = function (grunt) {
         options: {
           replacements: [{
             pattern: '"{{.WSUrl}}"',
-            replacement: '"ws://" + location.host'
+            replacement: '"ws://" + location.hostname + ":8080"'
           }]
         },
         files: {
